@@ -1,0 +1,179 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+html,
+body {
+
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+}
+
+.main {
+    height: 100%;
+    width: 100%;
+
+    margin-bottom: 10px;
+    padding: 0 3vw;
+
+
+}
+
+#nav-img {
+    font-size: 10px;
+    display: flex;
+}
+
+#nav-items {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    font-size: 20px;
+    font-weight: 200;
+    padding: 0px 20px;
+
+}
+
+#nav-items h4:hover {
+    color: #FF735C;
+}
+
+#nav-img h1 {
+    font-size: 50px;
+
+}
+
+.content {
+    margin: 30px;
+    height: calc(100% - 100px);
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    position: relative;
+
+}
+
+#part1 {
+    height: 100%;
+    width: 50%;
+    padding: 5vh 8vw;
+
+}
+
+span {
+    color: #FF735C;
+    font-size: 50px;
+    font-weight: 900;
+}
+
+#part1 p {
+    line-height: 2vw;
+    font-weight: 500px;
+    padding: 30px;
+    position: relative;
+    right: 40px;
+}
+
+#part1 h1 {
+    top: 20px;
+    position: relative;
+
+}
+
+#part2 img {
+    height: 100%;
+    width: 100%;
+
+}
+/*#circle{
+
+    background-color: #FF735C;
+    border-radius: 100px;
+    height: 70px;
+    width: 70px;
+    opacity: 11%;
+}
+#circle2{
+
+    background-color: #FF735C;
+    border-radius: 100px;
+    height: 70px;
+    width: 70px;
+    opacity: 11%;
+}*/
+
+#html-spinner{
+    width:40px;
+    height:40px;
+    
+    border:4px solid #FF735C;
+    border-top:4px solid white;
+    border-radius:50%;
+  }
+  
+  #html-spinner, #svg-spinner{
+    -webkit-transition-property: -webkit-transform;
+    -webkit-transition-duration: 1.2s;
+    -webkit-animation-name: rotate;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+    
+    -moz-transition-property: -moz-transform;
+    -moz-animation-name: rotate; 
+    -moz-animation-duration: 1.2s; 
+    -moz-animation-iteration-count: infinite;
+    -moz-animation-timing-function: linear;
+    
+    transition-property: transform;
+    animation-name: rotate; 
+    animation-duration: 1.2s; 
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+  }
+  
+  @-webkit-keyframes rotate {
+      from {-webkit-transform: rotate(0deg);}
+      to {-webkit-transform: rotate(360deg);}
+  }
+  
+  @-moz-keyframes rotate {
+      from {-moz-transform: rotate(0deg);}
+      to {-moz-transform: rotate(360deg);}
+  }
+  
+  @keyframes rotate {
+      from {transform: rotate(0deg);}
+      to {transform: rotate(360deg);}
+  }
+
+  
+  #html-spinner, #svg-spinner{
+    position:absolute;
+    top:10px;
+    margin-left: -360px;
+    padding: 50px;
+  }
+  
+  #html-spinner{
+    left:25%; 
+  }
+  
+  #svg-spinner{
+    left:75%; 
+  }
+  
+  #html-para, #svg-para{
+    position:absolute;
+    top:100px;
+    width:40%;
+    padding:5%;
+    text-align:center;
+  }
+  
+  #svg-para{
+    left:50%;
+  }
